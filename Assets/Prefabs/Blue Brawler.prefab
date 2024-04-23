@@ -122,6 +122,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   states: []
+  stateName: 
+  idleState:
+    stateStart:
+      m_PersistentCalls:
+        m_Calls: []
+    stateExited:
+      m_PersistentCalls:
+        m_Calls: []
+    stateMachine: {fileID: 0}
+    targetFoundState: ChaseState
   chaseState:
     stateStart:
       m_PersistentCalls:

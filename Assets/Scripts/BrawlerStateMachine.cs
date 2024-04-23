@@ -5,14 +5,16 @@ using SuperPupSystems.StateMachine;
 
 public class BrawlerStateMachine : SimpleStateMachine
 {
+    public IdleState idleState;
     public ChaseState chaseState;
     public HammerTimeState hammerTimeState;
     void Awake()
     {
+        states.Add(idleState);
         states.Add(chaseState);
         states.Add(hammerTimeState);
 
-        ChangeState(nameof(chaseState));
+        ChangeState(nameof(idleState));
     }
 
     void Start()

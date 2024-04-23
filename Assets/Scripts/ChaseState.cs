@@ -36,7 +36,7 @@ public class ChaseState : SimpleState
             return;
         }
 
-        // Face Walking Direction
+        // Face Target
         gameObject.transform.LookAt(target.transform);
 
         // Move Forward Toward Target
