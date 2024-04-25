@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using SuperPupSystems.StateMachine;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
