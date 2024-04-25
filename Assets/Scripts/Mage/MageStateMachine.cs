@@ -7,11 +7,13 @@ public class MageStateMachine : SimpleStateMachine
 {
     public IdleState idleState;
     public ChaseState chaseState;
+    public ChargeState chargeState;
     public FireballState fireballState;
     void Awake()
     {
         states.Add(idleState);
         states.Add(chaseState);
+        states.Add(chargeState);
         states.Add(fireballState);
 
         ChangeState(nameof(idleState));

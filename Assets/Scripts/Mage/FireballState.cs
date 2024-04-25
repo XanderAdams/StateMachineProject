@@ -20,7 +20,7 @@ public class FireballState : SimpleState
         if (staff == false)
             return;
         
-        staff.GetComponent<Animator>().Play("Charge");
+        staff.GetComponent<Animator>().Play("Cast");
     }
 
     public override void UpdateState(float _dt)
@@ -30,15 +30,12 @@ public class FireballState : SimpleState
         
         time += _dt;
 
-        if (time > 2.0f)
+        if (time > 1.0f)
             stateMachine.ChangeState("ChaseState");
     }
 
     public override void OnExit()
     {
-        if (staff == false)
-            return;
         
-        staff.GetComponent<Animator>().Play("Cast");
     }
 }
